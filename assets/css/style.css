@@ -2,6 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+:root {
+        --text-color: seashell;
+
 }
 
 body{
@@ -32,7 +37,7 @@ a:hover{
     color: rgb(17, 17, 19);
 }
 header{
-    width: 100%;
+    width: 100vw;
     height: 95vh;
 }
 
@@ -42,25 +47,29 @@ nav, footer{
     align-items: center;   
     background-color: rgb(37, 74, 196);
     box-shadow: 2px 2px 31px 7px rgba(87,170,255,0.8);
-    padding: 0px 5%;
 }
 nav ul, footer{
     display: flex;
+}
+
+footer{
+    margin-top: 20px;
 }
 
 nav ul li a{
     display: flex;
     margin: 24px;
     font-family: 'Open Sans Condensed', sans-serif;
-    color: seashell;
+    color: var(--text-color);
     font-size: 28px;
     font-weight: 500;
 }
 
 .logo{
     font-family: 'Open Sans Condensed', sans-serif;
-    color: seashell;
+    color: var(--text-color);
     font-size: 28px;
+    margin-left: 10px;
 }
  
 .container-2 ul li a{
@@ -68,7 +77,7 @@ nav ul li a{
     flex-direction: column;
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 6px;
-    color: seashell;
+    color: var(--text-color);
     font-size: 28px;
     margin: 68px;
     text-align: right;
@@ -76,7 +85,7 @@ nav ul li a{
 
 
 .active{
-    color: seashell;
+    color: var(--text-color);
 }
 
 
@@ -88,15 +97,44 @@ nav ul li a{
     flex-direction: column;
     flex-wrap: wrap;
 }
-.AboutMe, .Work {
+.AboutMe{
+    display: flex;
     flex: 1;
     color:rgb(37, 74, 196);
     border: 5px;
-    border: seashell;
+    border: var(--text-color);
     border-style: solid;
-    padding: 3px;
-    text-align: justify;
+    /* padding: 3px; */
     font-family: 'Open Sans Condensed', sans-serif;
     margin: 50px;
+    flex-direction: column;
 }
 
+.Work{
+    /* -webkit-box-shadow: 0px 0px 10px 0px #4B0082, 0px 0px 10px 0px #0000FF, 0px 0px 10px 0px #00FF00, 0px 0px 10px 0px #FFFF00, 0px 0px 10px 0px #FF7F00, 0px 0px 10px 0px #FF0000, 0px 0px 15px 5px rgba(0,0,0,0); */
+/* box-shadow: 0px 0px 10px 10px #4B0082, 0px 0px 10px 20px #0000FF, 0px 0px 10px 30px #00FF00, 0px 0px 10px 40px #FFFF00, 0px 0px 10px 50px #FF7F00, 0px 0px 10px 60px #FF0000, 0px 0px 15px 70px rgba(0,0,0,0); */
+border: solid 5px var(--text-color);
+margin: 50px;
+    
+}
+
+.abtme{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 500px) {
+    .AboutMe{
+        height: 100px;
+    }
+    .abtme{
+        flex-direction: column;
+    }
+    .Work{
+        margin-bottom: 40px;
+       
+    }
+    footer{
+        margin-top: 100px;
+    }
+}
