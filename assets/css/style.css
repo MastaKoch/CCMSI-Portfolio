@@ -137,4 +137,12 @@ margin: 50px;
     footer{
         margin-top: 100px;
     }
+    .container-2 ul li a{
+        width: 3px;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin-left: 2px;
+        flex-direction: column;
+        text-align: center;
+    }
 }
