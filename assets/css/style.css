@@ -38,7 +38,7 @@ a:hover{
 }
 header{
     width: 100vw;
-    height: 95vh;
+    height: 150vh;
 }
 
 nav, footer{
@@ -54,6 +54,7 @@ nav ul, footer{
 
 footer{
     margin-top: 20px;
+
 }
 
 nav ul li a{
@@ -104,18 +105,9 @@ nav ul li a{
     border: 5px;
     border: var(--text-color);
     border-style: solid;
-    /* padding: 3px; */
     font-family: 'Open Sans Condensed', sans-serif;
     margin: 50px;
     flex-direction: column;
-}
-
-.Work{
-    /* -webkit-box-shadow: 0px 0px 10px 0px #4B0082, 0px 0px 10px 0px #0000FF, 0px 0px 10px 0px #00FF00, 0px 0px 10px 0px #FFFF00, 0px 0px 10px 0px #FF7F00, 0px 0px 10px 0px #FF0000, 0px 0px 15px 5px rgba(0,0,0,0); */
-/* box-shadow: 0px 0px 10px 10px #4B0082, 0px 0px 10px 20px #0000FF, 0px 0px 10px 30px #00FF00, 0px 0px 10px 40px #FFFF00, 0px 0px 10px 50px #FF7F00, 0px 0px 10px 60px #FF0000, 0px 0px 15px 70px rgba(0,0,0,0); */
-border: solid 5px var(--text-color);
-margin: 50px;
-    
 }
 
 .abtme{
@@ -123,19 +115,47 @@ margin: 50px;
     flex-direction: row;
 }
 
+.Work{
+    color: rgb(37, 74, 196);
+    border: solid 5px var(--text-color);
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 92vw;
+        
+}
+
+.website, .LEDwall, .Calculator{
+    border-width: 100vw;
+    margin: 50px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border: var(--text-color);
+    flex-direction: column;
+    color: rgb(37, 74, 196);
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-2{color: var(--text-color);}
 @media screen and (max-width: 500px) {
+
+    header{
+        height: 550vw;
+    }
     .AboutMe{
         height: 100px;
     }
     .abtme{
         flex-direction: column;
     }
-    .Work{
-        margin-bottom: 40px;
        
-    }
     footer{
-        margin-top: 100px;
+        margin-top: 0px;
     }
     .container-2 ul li a{
         width: 3px;
@@ -145,4 +165,20 @@ margin: 50px;
         flex-direction: column;
         text-align: center;
     }
+    .Work{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .website, .LEDwall, .Calculator{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }

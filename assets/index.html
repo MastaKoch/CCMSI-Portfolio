@@ -3,8 +3,11 @@
 <html lang="en-us">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <script src="myscripts.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="reset css" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Portfolio</title>
 </head>
@@ -17,51 +20,71 @@
                     <a href="#" class="logo">Alex Koch's CCMSI Portfolio</a>
                     <!-- menu -->
                     <ul>
-                        <li><a href="#" class="active">About Me</a></li>
-                        <li><a href="#" class="active">Work</a></li>
-                        <li><a href="#" class="active">Contact Info</a></li>
+                        <li><a href="#about" class="active">About Me</a></li>
+                        <li><a href="#work" class="active">Work</a></li>
+                        <li><a href="#contact" class="active">Contact Info</a></li>
                     </ul>
             </nav>
-
+        <!-- flexbox container "about me" section -->
         <div class="container-1">
         
             <div class="AboutMe">
-                    <h1>About Me</h1>
+                    <h1 id="about">About Me</h1>
                     <div class="abtme">
                         <img src="./imgs/quarantine.jpg" 
                         alt="professional headshot" height="300px" width="250px">
-                        <p>Welcome to my page. Before we dive into my portfolio, I would like to introduce myself. I am Alex Koch and I am blessed to have the opportunity to showcase my talents to whoever is reading this.
-                        If you were to get through this page and have only one major takeaway, that takeaway would be that
-                        it is never too late to put forth your best effort. Let my life be a living testament to that.
-                        
+                        <p>Welcome to my page. Before we dive into my portfolio, I would like to introduce myself. 
+                            I am Alex Koch and I am blessed to have the opportunity to showcase my talents to whoever is reading this. 
+                            I am a full stack web developer. How did I get here? Let’s rewind to the workers’ comp insurance adjuster part of my story. 
+                            Upon accepting an internship with CCMSI, a TPA who handles the state of NC’s tax dollars for workers’ compensation claims, 
+                            I was immersed into the world of insurance. During that internship, I fell in love with the company. I found a place that 
+                            truly wanted to invest in me; in turn, I wanted to invest into CCMSI. When I was in the internship, we were working out of 
+                            a small office space (we were a start-up in Charlotte, NC). In this office space, we did not have a local IT department. 
+                            Many of my fellow coworkers were not as technologically savvy as I was. I assisted with everything IT related either on my own 
+                            or on the phone with the IT team collaborating to find a solution to the problem at hand. I manually configured and set up all 
+                            of the computers in the office and knew the layout of everything technology related in the office. I quickly came to realize that 
+                            a part of me had really come alive, and that was my passion for technology and big tech. And although I pursued Elementary education 
+                            in college for my undergraduate degree, I quickly came to realize that my career path should align with my passion, which is solving 
+                            problems. I am a problem solver at heart and that is why I am a full stack web developer. I hope you enjoyed my page and thank you for 
+                            your consideration.
+ 
                         </p>
                     </div>
                         
             </div>
         
-                <!-- work section -->
+                <!-- "work" section -->
                 <div class="Work">
-                        <h1>Work</h1>
-                            <br>
-                            <p>
-                            
-    
-    
-                            </p>
-    
-    
-           
+                        <h1 id="work">Work</h1>
+                        <div class="website">
+                                <p>Redesigned Website (HTML and CSS)</p>
+                                <img src="./imgs/horiseon.jpg" 
+                                alt="redesigned website" height="300px" width="250px">
+                        </div>
+
+                        <div class="LEDwall">
+                                <p>LED Wall (Node)</p>
+                                <img src="./imgs/led-wall.jpg" alt="LED wall" 
+                                height="300px" width="250px">
+                        </div> 
+                        
+                        <div class="Calculator">
+                                <p>Calculator (React/JS/CSS)</p>
+                                <img src="./imgs/calculator.jpg" alt="calculator"
+                                height="300px" width="250px">
+                        </div>
                 </div> 
         </div>            
             
         </header>
       
     
-            <!-- contact info section -->
+         
                 <footer>
+                       <!-- contact info section -->
                         <div class="container-2">
                             <ul>
-                            <li><a href="#" class="active">Contact Info</a></li>
+                            <h1 id="contact">Contact Info</h1></li>
                             <li><a href="#" class="active">Phone: (704)-654-2465</a></li>
                             <li><a href="https://www.linkedin.com/in/alex-koch-309641184/" 
                                 class="active">LinkedIn</a></li>
