@@ -2,18 +2,15 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 15pt;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-:root {
-        --text-color: seashell;
-
-}
-
-body{
-
-    background-color: rgb(196, 202, 221);
-    margin: 0px;
-    padding: 0px;
+/* style for header contents */
+.logo{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: seashell;
+    font-size: 28px;
+    margin-left: 10px;
 }
 
 ul{
@@ -21,8 +18,16 @@ ul{
     justify-content: space-between;
     list-style: none;
     align-items: stretch;
-    margin: 0px;
-    padding: 0px;
+    color: seashell;
+}
+
+.active {
+    display: flex;
+    margin: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: 500;
 }
 
 a{
@@ -33,63 +38,19 @@ a:hover{
     color: rgb(17, 17, 19);
 }
 
-.container-2 a:hover{
-    color: rgb(17, 17, 19);
-}
-header{
-    width: 100vw;
-    height: 150vh;
-}
 
-nav, footer{
+nav, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;   
     background-color: rgb(37, 74, 196);
     box-shadow: 2px 2px 31px 7px rgba(87,170,255,0.8);
 }
-nav ul, footer{
-    display: flex;
-}
 
-footer{
-    margin-top: 20px;
-
-}
-
-nav ul li a{
-    display: flex;
-    margin: 24px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: var(--text-color);
-    font-size: 28px;
-    font-weight: 500;
-}
-
-.logo{
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: var(--text-color);
-    font-size: 28px;
-    margin-left: 10px;
-}
- 
-.container-2 ul li a{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Open Sans Condensed', sans-serif;
-    padding: 6px;
-    color: var(--text-color);
-    font-size: 28px;
-    margin: 68px;
-    text-align: right;
-}
+/* end styling for header */
 
 
-.active{
-    color: var(--text-color);
-}
-
-
+/* styling for container 1 */
 .container-1{
 
     padding: 20px;
@@ -98,56 +59,80 @@ nav ul li a{
     flex-direction: column;
     flex-wrap: wrap;
 }
-.AboutMe{
+
+.c1intro{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+#about, #work{
+    font-size: 36pt;
+    color:rgb(37, 74, 196);
+    text-align: center;
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+
+.aboutMe{
     display: flex;
     flex: 1;
     color:rgb(37, 74, 196);
-    border: 5px;
-    border: var(--text-color);
-    border-style: solid;
     font-family: 'Open Sans Condensed', sans-serif;
     margin: 50px;
     flex-direction: column;
 }
+/* end styling for container 1 */
 
-.abtme{
-    display: flex;
-    flex-direction: row;
-}
+/* styling for container 2 */
 
-.Work{
+.work {
     color: rgb(37, 74, 196);
-    border: solid 5px var(--text-color);
-    margin: 50px;
+    margin: 30px;
     display: flex;
+    flex: 1;
     flex-direction: row;
-    width: 92vw;
+    width: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
         
 }
 
-.website, .LEDwall, .Calculator{
-    border-width: 100vw;
-    margin: 50px;
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    border: var(--text-color);
-    flex-direction: column;
-    color: rgb(37, 74, 196);
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    padding: 0px;
-    align-items: center;
-    justify-content: space-between;
+.project1, .dayPlanner, .converterPage{
+    margin: auto;
+}
+
+#pinPointimg, #dayPlanner, #converter{
+    border: 1px solid;
+    border-color:rgb(37, 74, 196);
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+}
+
+#pinPointimg:hover, #dayPlanner:hover, #converter:hover{
+-webkit-box-shadow: -12px 14px 15px 2px #122EFF; 
+box-shadow: -12px 14px 15px 2px #122EFF;
+transition-duration: 0.4s;
+}
+
+#contact{
+    color: seashell;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 28px;
+    margin: 25px;
 }
 
 .container-2{color: var(--text-color);}
 @media screen and (max-width: 500px) {
 
     header{
-        height: 550vw;
+        height: 600vw;
     }
-    .AboutMe{
+    .aboutMe{
         height: 100px;
     }
     .abtme{
@@ -173,7 +158,7 @@ nav ul li a{
         width: auto;
     }
 
-    .website, .LEDwall, .Calculator{
+    .project1, .dayPlanner, .converterPage{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
