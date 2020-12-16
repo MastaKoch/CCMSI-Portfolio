@@ -40,11 +40,13 @@ a:hover{
 
 
 nav, footer {
+    margin: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;   
     background-color: rgb(37, 74, 196);
     box-shadow: 2px 2px 31px 7px rgba(87,170,255,0.8);
+    
 }
 
 /* end styling for header */
@@ -103,6 +105,9 @@ nav, footer {
 
 .project1, .dayPlanner, .converterPage{
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 #pinPointimg, #dayPlanner, #converter{
@@ -126,11 +131,15 @@ transition-duration: 0.4s;
     margin: 25px;
 }
 
-.container-2{color: var(--text-color);}
-@media screen and (max-width: 500px) {
 
-    header{
-        height: 600vw;
+@media all and (min-width: 375px) {
+
+    /* nav, footer{
+        height: 20vw;
+        width: 1024px;
+        margin: 0px;
+        min-width: 500px;
+        max-width: 1200px;
     }
     .aboutMe{
         height: 100px;
@@ -142,15 +151,8 @@ transition-duration: 0.4s;
     footer{
         margin-top: 0px;
     }
-    .container-2 ul li a{
-        width: 3px;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        margin-left: 2px;
-        flex-direction: column;
-        text-align: center;
-    }
-    .Work{
+   
+    .work{
         height: auto;
         display: flex;
         flex-direction: column;
@@ -164,6 +166,7 @@ transition-duration: 0.4s;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex: 1;
     }
-    
+     */
 }
