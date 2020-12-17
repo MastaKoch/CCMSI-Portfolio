@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-size: 15pt;
     font-family: 'Open Sans Condensed', sans-serif;
-}
+} 
 /* style for header contents */
 .logo{
     font-family: 'Open Sans Condensed', sans-serif;
@@ -21,7 +21,7 @@ ul{
     color: seashell;
 }
 
-.active {
+.active, .endLink {
     display: flex;
     margin: 24px;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -126,39 +126,49 @@ transition-duration: 0.4s;
 #contact{
     color: seashell;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 28px;
+    font-size: 36pt;
     margin: 25px;
 }
 #ham-label, #hamburger{
     display: none;
 } 
 
-@media only screen and (max-width: 768px) {
 
-    nav, footer{
-        height: 40px;
-        width: 100vw;
-        margin: 0px;
-        min-width: 500px;
-        max-width: 1200px;
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+    .container-1, .container-2{
+        min-width: 30rem;
+        text-align: center;
     }
 
-    .active{
-        font-size: 12px;
-    }
-    /* .aboutMe{
+     nav, footer{
         height: 100px;
+        margin: 0px;
+        min-width: 30rem;
+        justify-content: space-around;
+    
     }
-    .abtme{
-        flex-direction: column;
-    }
-       
-    footer{
-        margin-top: 0px;
-    }  */
 
-  
-     .work{
+
+    .endLink{
+        font-size: 10pt;
+        margin: 10px;
+    }
+
+    #contact{
+        font-size: 10pt;
+        text-align: center;
+    }
+
+    
+
+    .active {
+        text-align: center;
+        font-size: 10pt;
+    }
+      .work{
         font-size: 300px;
         height: auto;
         display: flex;
@@ -173,8 +183,92 @@ transition-duration: 0.4s;
     .description{
         margin-bottom: 8px;
     }
-     
-} 
+ }
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container-1, .container-2{
+        min-width: 33rem;
+        text-align: center;
+    }
+
+    .work{
+        font-size: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+     nav, footer{
+        height: 100px;
+        margin: 0px;
+        min-width: 33rem;
+        justify-content: space-around;
+    
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+    
+    .active, .endLink {
+        text-align: center;
+        font-size: 11pt;
+    }
+
+    .endLink{
+        margin: 5px;
+        text-align: left;
+    }
+    #contact{
+        font-size: 12pt;
+        margin: 0px;
+    }
+    
+    .project1, .dayPlanner, .converterPage{
+        margin-bottom: 15px;
+    }
+    
+    .description{
+        margin-bottom: 8px;
+    } 
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .container-1, .container-2{
+        min-width: 42rem;
+        text-align: center;
+    }
+    nav, footer{
+        height: 100px;
+        margin: 0px;
+        min-width: 42rem;
+        justify-content: space-between;
+    
+    }
+    .work{
+        font-size: 300px;
+        display: flex;
+        flex-direction: column
+    }
+    .active, .endLink, #contact {
+        text-align: center;
+        font-size: 14pt;
+    }
+}
+
+@media (min-width: 1100px) {
+    .work{
+        flex-direction: row;
+    }
+}
+
+
+
+
+ 
 
 
