@@ -134,7 +134,7 @@ transition-duration: 0.4s;
 } 
 
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
 
     .container-1, .container-2{
         min-width: 30rem;
