@@ -4,7 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- links to Google fonts, reset style sheet, css style sheet -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="reset css" type="text/css" href="css/reset.css">
@@ -17,6 +18,8 @@
     <header>
             <!-- navigation -->
             <nav>
+                <label id='ham-label' for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger"/>
                     <!-- logo -->
                     <a href="#" class="logo">Alex Koch's Portfolio</a>
                     <!-- menu -->
@@ -74,21 +77,21 @@
                 <div class="work">
                         <div class="project1">
                                 <h2>Web Application (Project 1): PinPoint</h2>
-                                <p>HTML, CSS, JavaScript, JQuery, Ajax</p>
+                                <p class="description">HTML, CSS, JavaScript, JQuery, Ajax</p>
                                 <!-- insert PinPoint image here -->
                                 <a href="https://mastakoch.github.io/PinPointProject1/" target="_blank"><img id="pinPointimg" src= ./imgs/ppImg.PNG alt="project 1 picture PinPoint"></a>
                         </div>
 
                         <div class="dayPlanner">
                                 <h2>Day Planner Application</h2>
-                                <p>HTML, CSS, JavaScript, JQuery</p>
+                                <p class="description">HTML, CSS, JavaScript, JQuery</p>
                                 <!-- insert DayPlanner image here -->
                                 <a href="https://mastakoch.github.io/workdayscheduler/" target="_blank"><img id="dayPlanner" src= ./imgs/dayPlanner.PNG alt="Day Planner App"></a>
                         </div> 
                         
                         <div class="converterPage">
                                 <h2>Converter Page</h2>
-                                <p>HTML, CSS, JavaScript, JQuery</p>
+                                <p class="description">HTML, CSS, JavaScript, JQuery</p>
 
                                <!-- insert converter page image here -->
                                <a href="https://mastakoch.github.io/base64Encoder/" target="_blank"><img id="converter" src= ./imgs/converterPg.PNG alt="Converter Page"></a>
