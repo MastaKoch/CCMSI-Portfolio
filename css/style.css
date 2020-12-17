@@ -134,7 +134,54 @@ transition-duration: 0.4s;
 } 
 
 
+@media (max-width: 375px) {
 
+    .container-1, .container-2{
+        min-width: 30rem;
+        text-align: center;
+    }
+
+     nav, footer{
+        height: 100px;
+        margin: 0px;
+        min-width: 30rem;
+        justify-content: space-around;
+    
+    }
+
+
+    .endLink{
+        font-size: 12pt;
+        margin: 10px;
+    }
+
+    #contact{
+        font-size: 10pt;
+        text-align: center;
+    }
+
+    
+
+    .active {
+        text-align: center;
+        font-size: 13pt;
+    }
+      .work{
+        font-size: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .project1, .dayPlanner, .converterPage{
+        margin-bottom: 15px;
+    }
+
+    .description{
+        margin-bottom: 8px;
+    }
+ } 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 
