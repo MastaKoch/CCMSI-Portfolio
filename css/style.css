@@ -102,14 +102,14 @@ nav, footer {
         
 }
 
-.project1, .dayPlanner, .converterPage{
+.project1, .dayPlanner, .converterPage, .randomPw, .moldyMelon, .weatherDash{
     margin: auto;
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-#pinPointimg, #dayPlanner, #converter{
+#pinPointimg, #dayPlanner, #converter, #password, #moldyMelon, #weatherDash{
     border: 1px solid;
     border-color:rgb(37, 74, 196);
     border-radius: 4px;
@@ -117,7 +117,7 @@ nav, footer {
     width: 350px;
 }
 
-#pinPointimg:hover, #dayPlanner:hover, #converter:hover{
+#pinPointimg:hover, #dayPlanner:hover, #converter:hover, #password:hover, #moldyMelon:hover, #weatherDash:hover{
 -webkit-box-shadow: -12px 14px 15px 2px #122EFF; 
 box-shadow: -12px 14px 15px 2px #122EFF;
 transition-duration: 0.4s;
